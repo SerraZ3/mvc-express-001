@@ -12,9 +12,10 @@ const userController = require("../controllers/UserController");
 router.get("/", userController.index);
 router.get("/:id", userController.show);
 router.post("/", userController.store);
-router.post("/save/:id/:name?", userController.save);
 router.patch("/:id", userController.update);
 router.put("/:id", userController.update);
 router.delete("/:id", userController.delete);
+
+router.post("/save/:id/:name?", userController.save);
 
 module.exports = router;
