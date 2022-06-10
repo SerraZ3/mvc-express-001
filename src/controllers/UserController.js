@@ -83,6 +83,7 @@ const userController = {
     users.splice(result, 1);
     return res.status(200).json({ message: "Usuário deletado com sucesso" });
   },
+  // Controller para exemplo de parametro opcional
   save: (req, res) => {
     const { id, name } = req.params;
     if (name) {
